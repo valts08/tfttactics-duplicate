@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+:root {
+    --prirmary-font: "Sofia Sans", sans-serif;
+}
+
+p,
+li,
+span {
+    font-family: var(--prirmary-font);
+}
+
+a {
+    text-decoration: none;
+    text
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #0d202b;
+}
+.nav-container {
+    display: flex;
+    margin: 0 23rem;
+    min-height: 3rem;
+}
+
+.placeh-square {
+    min-width: 5rem;
+    border: 3px solid red;
+}
+
+.logo {
+    align-self: center;
+    display: flex;
+}
+
+.summoner-search {
+    align-self: center;
+    flex-grow: 1;
+    margin: 0 150px;
+}
+
+.donwloand-btn {
+    align-self: center;
+}
+
