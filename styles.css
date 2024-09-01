@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 :root {
-    --prirmary-font: "Sofia Sans", sans-serif;
+    --primary-font: "Sofia Sans", sans-serif;
+    --primary-text-color: hsl(194, 15%, 59%);
 }
 
-p,
-li,
-span {
-    font-family: var(--prirmary-font);
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
 }
 
 a {
     text-decoration: none;
-    text
 }
 
 body {
@@ -24,27 +23,74 @@ nav {
 }
 .nav-container {
     display: flex;
-    margin: 0 23rem;
+    margin: 0 auto;
+    max-width: 1200px;
     min-height: 3rem;
 }
 
 .placeh-square {
-    min-width: 5rem;
     border: 3px solid red;
 }
 
 .logo {
-    align-self: center;
     display: flex;
+    align-self: center;
 }
 
+.brand {
+    min-height: 22px;
+}
+
+.dropdown {
+    display: flex;
+    font-size: .9em;
+    line-height: 1.25em;
+    min-width: 2rem;
+}
+.btn {
+    background: #aaaaaa;
+    margin-left: 2rem;
+    /* background: #123040; */
+    border: none;
+    cursor: pointer;
+    font-family: var(--primary-font);
+    align-self: center;
+}
+.set-btn {
+    margin-left: 1px;
+    min-height: 22px;
+}
 .summoner-search {
     align-self: center;
     flex-grow: 1;
     margin: 0 150px;
 }
 
-.donwloand-btn {
+.donwload-btn {
+    min-width: 10em;
     align-self: center;
 }
 
+@media screen and (min-width: 1200px) {
+    .right-btn {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        min-width: 11rem;
+        line-height: 2.5em;
+        min-height: 2.5em;
+        color: white;
+        background: #227aad;
+    }
+}
+
+.white {
+    color: #ffffff;
+}
+
+.windows-img {
+    max-width: 1rem;
+    max-height: 1rem;
+    padding: 0 .5em;
+    border-radius: 3px;
+}

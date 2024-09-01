@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href=".\styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="/>
     </head>
     <body>
         
@@ -14,21 +15,25 @@
             <div class="nav-container">
                 <div class="logo">
                     <a href="#home">
-                        <img src="" alt="">
-                        <span id="logo-text">tftactics</span>
+                        <img class="brand" src="https://rerollcdn.com/brand.svg" alt="">
                     </a>
-                    <div class="set-selector placeh-square"></div>
+                    <div class="dropdown">
+                        <button class="set-btn  btn  white" type="button">
+                            <span>Set 12</span>
+
+                        </button>
+                    </div>
                 </div>
                 <div class="summoner-search placeh-square">
                     <div class="dropdown"></div>
-                    <input class="summoner-input" type="text" placeholder="Search Summoner Name...">
+                    <input class="summoner-input" type="search" placeholder="Search Summoner Name...">
                 </div>
-                <div class="download-btn placeh-square">
-                    <button type="button">
-                        <i></i>
-                        <span></span>
-                    </button>
-                </div>
+                <a class="download-btn" href="#home">
+                    <div class="right-btn">
+                        <img class="windows-img" src="https://rerollcdn.com/Qwiki/UI/windows-icon.svg" alt="download link">
+                        <span>Download TFTactics</span>
+                    </div>
+                </a>
             </div>
         </nav>
 
