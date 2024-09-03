@@ -25,11 +25,11 @@ nav {
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
-    min-height: 3rem;
+    min-height: 3.125rem;
 }
 
 .placeh-square {
-    border: 3px solid red;
+    border: 1px solid red;
 }
 
 .logo {
@@ -37,33 +37,54 @@ nav {
     align-self: center;
 }
 
+.logo-center {
+    align-self: center;
+}
+
 .brand {
-    min-height: 22px;
+    height: 22px;
 }
 
 .dropdown {
     display: flex;
     font-size: .9em;
-    line-height: 1.25em;
-    min-width: 2rem;
 }
 .btn {
-    background: #aaaaaa;
-    margin-left: 2rem;
-    /* background: #123040; */
+    display: flex;
+    justify-content: space-between;
+    background: #123040;
     border: none;
     cursor: pointer;
     font-family: var(--primary-font);
-    align-self: center;
+    align-items: center;
+    min-height: 2;
+    padding: 6px 12px;
+    height: 2rem;
+    /* line-height: 1em; */
 }
 .set-btn {
-    margin-left: 1px;
-    min-height: 22px;
+    margin-left: 1rem;
+    border-radius: 3px;
+    justify-self: start;
+    min-width: 6rem;
 }
 .summoner-search {
+    display: flex;
     align-self: center;
     flex-grow: 1;
-    margin: 0 150px;
+    margin: 0 50px;
+}
+.region-dropdown {
+    /* width: 100%; */
+    min-width: 3.125rem;
+    /* flex-grow: 2; */
+}
+.search-btn {
+    border-radius: 3px;
+}
+.summoner-input {
+    width: 100%;
+    /* flex-grow: 4; */
 }
 
 .donwload-btn {
@@ -81,6 +102,9 @@ nav {
         min-height: 2.5em;
         color: white;
         background: #227aad;
+    }
+    .summoner-search {
+        margin: 0 150px;
     }
 }
 
