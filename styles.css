@@ -3,11 +3,27 @@
 :root {
     --primary-font: "Sofia Sans", sans-serif;
     --primary-text-color: hsl(194, 15%, 59%);
+    --primary-background: #0d202b;
+    --secondary-background: #102531;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+img, picture, svg, video {
+    display: block;
+    max-width: 100%
+}
+  
+input, textarea, button, select {
+    font: inherit;
 }
 
 body {
     font-family: var(--primary-font);
     color: var(--primary-text-color);
+    letter-spacing: 0.015em;
 }
 
 a {
@@ -19,9 +35,9 @@ body {
     padding: 0;
 }
 nav {
-    background-color: #0d202b;
+    background-color: var(--primary-background);
 }
-.nav-container {
+.container {
     display: flex;
     margin: 0 auto;
     max-width: 1200px;
@@ -60,7 +76,6 @@ nav {
     min-height: 2;
     padding: 6px 12px;
     height: 2rem;
-    /* line-height: 1em; */
 }
 .set-btn {
     margin-left: 1rem;
@@ -68,44 +83,58 @@ nav {
     justify-self: start;
     min-width: 6rem;
 }
+
 .summoner-search {
     display: flex;
     align-self: center;
     flex-grow: 1;
-    margin: 0 50px;
 }
+
 .region-dropdown {
-    /* width: 100%; */
     min-width: 3.125rem;
-    /* flex-grow: 2; */
 }
+
 .search-btn {
     border-radius: 3px;
 }
+
 .summoner-input {
     width: 100%;
-    /* flex-grow: 4; */
-}
-
-.donwload-btn {
-    min-width: 10em;
-    align-self: center;
 }
 
 @media screen and (min-width: 1200px) {
     .right-btn {
         display: flex;
         align-items: center;
-        justify-items: center;
         min-width: 11rem;
-        line-height: 2.5em;
         min-height: 2.5em;
         color: white;
         background: #227aad;
+        border-radius: 2px;
+        box-shadow: inset 0 0 2px 0 black;
     }
     .summoner-search {
         margin: 0 150px;
     }
+}
+
+@media screen and (max-width: 1265px) {
+    .container {
+        max-width: 1000px;
+    }
+    .summoner-search {
+        margin: 0 50px;
+    }
+}
+
+.download-btn {
+    height: auto;
+    min-width: 10em;
+    align-self: center;
+}
+
+#download-btn-text {
+    margin-left: .5em;
 }
 
 .white {
@@ -115,6 +144,76 @@ nav {
 .windows-img {
     max-width: 1rem;
     max-height: 1rem;
-    padding: 0 .5em;
-    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.section-row {
+    background: var(--secondary-background);
+    border-top: 1px solid #17313a;
+    border-bottom: 1px solid #17313a;
+}
+
+.section-item {
+    /* display: flex; */
+    align-self: center;
+    justify-self: center;
+    /* justify-content: center; */
+    height: 100%;
+    flex-grow: 1;
+}
+
+.section-links {
+    padding: 0;
+}
+
+.section-links a {
+    color: #88a0a7;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 400;
+}
+
+.section-links li {
+    list-style-type: none;
+    text-decoration: none;
+    align-self: center;
+    text-transform: capitalize;
+    height: 100%;
+}
+
+.section-link {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.section-item .section-link::before {
+    content: "";
+    background:#d47559;
+    position: absolute;
+    height: 4px;
+    bottom: -1.05em;
+    width: 0;
+    transition: width .3s;
+}
+
+.section-item .section-link.active::before {
+    width: 100%;
+}
+
+.section-link:hover {
+    color: white;
+    transition-duration: .5s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+}
+
+a.active {
+    color: white;
+}
+
+.team-comps {
+    background: var(--primary-background);
+    width: 100%;
 }
