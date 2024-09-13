@@ -48,6 +48,7 @@ nav {
     border: 1px solid red;
 }
 
+/* NAV SECTION START */
 .logo {
     display: flex;
     align-self: center;
@@ -146,7 +147,9 @@ nav {
     max-height: 1rem;
     margin-left: 5px;
 }
+/* NAV SECTION END */
 
+/* ROUTER SECTION START */
 .section-row {
     background: var(--secondary-background);
     border-top: 1px solid #17313a;
@@ -212,8 +215,36 @@ nav {
 a.active {
     color: white;
 }
+/* ROUTER SECTION END */
 
+/* MAIN SECTION START */
 .team-comps {
     background: var(--primary-background);
     width: 100%;
+    padding-top: 2rem;
 }
+
+.stats-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.character-portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.unit-avatar {
+    border-radius: 50%;
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.unit-description {
+    flex: 2 1;
+}
+/* MAIN SECTION END */
