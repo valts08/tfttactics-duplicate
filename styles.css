@@ -28,11 +28,18 @@ body {
     letter-spacing: 0.015em;
 }
 
+p,
 h1,
 h2,
 h3,
 h4 {
     margin: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2em;
+    font-weight: bolder;
 }
 
 h2 {
@@ -284,7 +291,7 @@ a.active {
     min-height: 40px;
     min-width: 40px;
     margin: 0 10px;
-    border-radius: 1px solid #17313a;
+    border: 1px solid #17313a;
 }
 
 .divider {
@@ -321,8 +328,96 @@ a.active {
     margin-top: 0;
 }
 
+/* STATS SECTION END */
+
+/* DESCRIPTION SECTION START */
 .unit-description {
     flex: 2 1;
+    padding-left: 1rem;
+    border-left: 1px solid #17313a;
 }
-/* STATS SECTION END */
+
+.ability-desc {
+    display: flex;
+    padding: 20px 20px 0 20px;
+    border: 1px solid #17313a;
+    border-radius: 3px;
+    background: var(--secondary-background);
+    margin-bottom: 1.25rem;
+}
+
+.ability-img {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    padding: 1px;
+    border: 1px solid #17313a;
+}
+
+.mana-icon {
+    width: 16px;
+    height: 16px;
+    max-height: 16px;
+    margin-right: 6px;
+}
+
+.ability-desc-text {
+    padding-left: 2rem;
+}
+
+.ability-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.ability-name {
+    margin-bottom: .5rem;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+}
+
+.ability-text-body {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.tier-rank-item {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    line-height: 1.8em;
+}
+
+.trait-tiers {
+    margin-top: 1rem;
+}
+
+.tier-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 1rem;
+    color: var(--primary-text-color);
+    border: 1px solid #17313a;
+    border-radius: 15px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: default;
+}
+
+.misc-img {
+    width: 32px;
+    height: 32px;
+}
+
+/* DESCRIPTION SECTION END */
+
 /* MAIN SECTION END */
