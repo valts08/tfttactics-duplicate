@@ -25,6 +25,7 @@ body {
     padding: 0;
     font-family: var(--primary-font);
     color: var(--primary-text-color);
+    background: var(--primary-background);
     letter-spacing: 0.015em;
 }
 
@@ -178,10 +179,8 @@ nav {
 }
 
 .section-item {
-    /* display: flex; */
     align-self: center;
     justify-self: center;
-    /* justify-content: center; */
     height: 100%;
     flex-grow: 1;
 }
@@ -198,7 +197,6 @@ nav {
 }
 
 .section-links li {
-    /* list-style-type: none; */
     align-self: center;
     text-transform: capitalize;
     height: 100%;
@@ -243,6 +241,7 @@ a.active {
     background: var(--primary-background);
     width: 100%;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .stats-section {
@@ -286,6 +285,7 @@ a.active {
 }
 
 .bis-img {
+    position: relative;
     height: 40px;
     width: 40px;
     min-height: 40px;
@@ -314,7 +314,6 @@ a.active {
 }
 
 .stats-list li {
-    /* list-style: none; */
     font-weight: 600;
     color: white;
     margin: 10px 0;
@@ -339,7 +338,7 @@ a.active {
 
 .ability-desc {
     display: flex;
-    padding: 20px 20px 0 20px;
+    padding: 20px;
     border: 1px solid #17313a;
     border-radius: 3px;
     background: var(--secondary-background);
@@ -418,6 +417,74 @@ a.active {
     height: 32px;
 }
 
+/* SYNERGY SECTION SELECTORS START */
+.syngery-section {
+    padding-bottom: 20px;
+}
+
+.champion-list {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.synergy-icon {
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.center-icon {
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.icon-padding {
+    padding: 5px;
+    width: 10%;
+}
+/* SYNERGY SECTION SELECTORS END */
+
 /* DESCRIPTION SECTION END */
 
 /* MAIN SECTION END */
+
+/* FOOTER START */
+.footer {
+    background: var(--secondary-background);
+    border-top: 1px solid #17313a;
+    padding-top: 2rem;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.footer-items a {
+    margin: 0 30px;
+    color: var(--primary-text-color);
+}
+
+.footer-about {
+    font-size: 15px;
+    line-height: 1.75em;
+    text-align: center;
+    font-weight: 400;
+}
+.d-block {
+    display: block;
+}
+.trademark {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 500;
+}
+/* FOOTER END */
